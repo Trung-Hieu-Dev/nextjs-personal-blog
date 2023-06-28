@@ -12,6 +12,7 @@ const Hero = () => {
           alt="An image showing Hieu"
           width={300}
           height={300}
+          priority
         />
       </div>
       <h1>Hi, I'm Hieu</h1>

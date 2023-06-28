@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./post-item.module.css";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const PostItem = (props) => {
   const { title, image, excerpt, date, slug } = props.post;
@@ -28,6 +28,7 @@ const PostItem = (props) => {
               width={300}
               height={200}
               layout="responsive"
+              priority
             />
           </div>
           <div className={classes.content}>

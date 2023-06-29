@@ -51,6 +51,9 @@ const ContactForm = () => {
     try {
       await sendContactData(newMessage);
       setRequestStatus("success");
+      setEnteredEmail("");
+      setEnteredName("");
+      setEnteredMessage("");
     } catch (error) {
       setRequestStatus("error");
       setRequestError(error.message);
